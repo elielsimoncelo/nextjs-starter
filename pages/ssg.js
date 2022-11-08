@@ -1,3 +1,4 @@
+import Link from "../src/components/Link"
 import delay from "../src/util/delay"
 
 export async function getStaticProps() {
@@ -11,6 +12,9 @@ export async function getStaticProps() {
 
 export default function SSGPage({ mensagem }) {
     return (
-        <h1>{mensagem}</h1>
+        <di>
+            <h1>{mensagem}</h1>
+            <Link href="/">Ir para a Home</Link>
+        </di>
     )
 }
