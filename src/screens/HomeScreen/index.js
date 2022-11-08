@@ -2,9 +2,10 @@ import Footer from '../../components/patterns/Footer'
 import Link from '../../components/Link'
 import { theme } from '../../theme/theme'
 import { Image, Box, Text, Icon, Input, Button } from '../../theme/components'
+import PageTitle from '../../components/PageTitle'
 
-const LOGO_ALURA_URL = 'http://placehold.it/94x44'
-const SIDE_IMAGE_URL = 'http://placehold.it/2878x1640'
+const LOGO_ALURA_URL = '/images/alura-logo.svg'
+const SIDE_IMAGE_URL = '/images/alura-cases.png'
 
 function SideImage() {
   return (
@@ -44,7 +45,7 @@ function SideImage() {
           }
         }}
       >
-        <Box 
+        <Box
           styleSheet={{
             height: {
               lg: theme.space["x1/1"],
@@ -96,6 +97,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
+      <PageTitle>
+        Home - Alura Cases Campanhas
+      </PageTitle>
       <Box
         as="main"
         styleSheet={{
@@ -208,9 +212,10 @@ export default function HomeScreen() {
                       <Icon
                         styleSheet={{
                           iconVariant: 'chevronRight',
-                          marginLeft: theme.space.xpx,
+                          marginLeft: theme.space.xpx
                         }}
                         aria-hidden="true"
+                        width="16px"
                       />
                     </Text>
                   </Link>
@@ -288,7 +293,7 @@ export default function HomeScreen() {
                       placeholder="Coloque seu email aqui"
                     />
                   </Box>
-                  <Box 
+                  <Box
                     styleSheet={{
                       marginTop: {
                         xs: theme.space.x4,
@@ -301,7 +306,7 @@ export default function HomeScreen() {
                   >
                     <Button
                       type="submit"
-                      // button variant
+                    // button variant
                     >
                       Cadastrar
                     </Button>
