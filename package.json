@@ -2,6 +2,8 @@
   "name": "alura-cases-divulgacao",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/elielsimoncelo/nextjs-starter.git",
+  "author": "Eliel Sousa <13791385+elielsimoncelo@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

@@ -1,5 +1,6 @@
 import { theme } from '../../../theme/theme';
 import { Box, Text } from '../../../theme/components';
+import Link from '../../Link';
 
 export default function Footer() {
   return (
@@ -33,7 +34,7 @@ export default function Footer() {
             color: theme.colors.neutral[400],
           }}
         >
-          &copy; {new Date().getFullYear()} Eliel Sousa. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Eliel Sousa. Todos os direitos reservados. | <Link href='/ssg' style={{ color: 'red' }}>SSG Sample</Link> | <Link href='/ssr' style={{ color: 'red' }}>SSR Sample</Link>
         </Text>
       </Box>
     </Box>
