@@ -2,7 +2,7 @@ import Link from "../src/components/Link"
 import delay from "../src/util/delay"
 
 export async function getStaticProps() {
-    await delay(5)
+    await delay(2)
     return {
         props: {
             mensagem: 'Fui gerada durante o build!',
