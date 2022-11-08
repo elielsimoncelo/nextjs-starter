@@ -18,7 +18,7 @@
 import delay from "../src/util/delay"
 
 export async function getServerSideProps() {
-    await delay(5)
+    await delay(2)
     return {
         props: {
             mensagem: 'Fui renderizada para esta requisição!',
