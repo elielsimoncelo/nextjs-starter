@@ -28,6 +28,9 @@ export async function getServerSideProps() {
 
 export default function SSGPage({ mensagem }) {
     return (
-        <h1>{mensagem}</h1>
+        <di>
+            <h1>{mensagem}</h1>
+            <Link href="/">Ir para a Home</Link>
+        </di>
     )
 }
